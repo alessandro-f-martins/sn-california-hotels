@@ -8,16 +8,16 @@
             <label>Single</label>
             <language>en</language>
             <name>x_423377_californi_room_availability</name>
-            <sequence/>
+            <sequence>0</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-11-17 04:03:50</sys_created_on>
+            <sys_created_on>2019-11-19 14:07:35</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>891aece3dbc540106b4b6781ca961959</sys_id>
+            <sys_id>3877011cdb9104106b4b6781ca9619d7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-11-17 04:03:50</sys_updated_on>
-            <value>1</value>
+            <sys_updated_on>2019-11-19 14:07:35</sys_updated_on>
+            <value>single</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -27,35 +27,54 @@
             <label>Double</label>
             <language>en</language>
             <name>x_423377_californi_room_availability</name>
-            <sequence/>
+            <sequence>1</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-11-17 04:03:50</sys_created_on>
+            <sys_created_on>2019-11-19 14:07:35</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>4d1aece3dbc540106b4b6781ca96195b</sys_id>
+            <sys_id>3c77011cdb9104106b4b6781ca9619d8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-11-17 04:03:50</sys_updated_on>
-            <value>2</value>
+            <sys_updated_on>2019-11-19 14:07:35</sys_updated_on>
+            <value>double</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>room_type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Double-Double</label>
+            <label>Queen</label>
             <language>en</language>
             <name>x_423377_californi_room_availability</name>
-            <sequence/>
+            <sequence>2</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-11-17 04:03:50</sys_created_on>
+            <sys_created_on>2019-11-19 14:07:35</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>cd1aece3dbc540106b4b6781ca96195d</sys_id>
+            <sys_id>b877011cdb9104106b4b6781ca9619d9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-11-17 04:03:50</sys_updated_on>
-            <value>3</value>
+            <sys_updated_on>2019-11-19 14:07:35</sys_updated_on>
+            <value>queen</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>room_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>King</label>
+            <language>en</language>
+            <name>x_423377_californi_room_availability</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-11-19 14:07:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3877011cdb9104106b4b6781ca9619da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-11-19 14:07:35</sys_updated_on>
+            <value>king</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -65,16 +84,16 @@
             <label>Suite</label>
             <language>en</language>
             <name>x_423377_californi_room_availability</name>
-            <sequence/>
+            <sequence>4</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-11-17 04:03:50</sys_created_on>
+            <sys_created_on>2019-11-19 14:07:35</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>411aece3dbc540106b4b6781ca961960</sys_id>
+            <sys_id>b477011cdb9104106b4b6781ca9619db</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-11-17 04:03:50</sys_updated_on>
-            <value>4</value>
+            <sys_updated_on>2019-11-19 14:07:35</sys_updated_on>
+            <value>suite</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -84,24 +103,24 @@
             <label>Master Suite</label>
             <language>en</language>
             <name>x_423377_californi_room_availability</name>
-            <sequence/>
+            <sequence>5</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-11-17 04:03:50</sys_created_on>
+            <sys_created_on>2019-11-19 14:07:35</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c11aece3dbc540106b4b6781ca961962</sys_id>
+            <sys_id>3477011cdb9104106b4b6781ca9619dc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-11-17 04:03:50</sys_updated_on>
-            <value>5</value>
+            <sys_updated_on>2019-11-19 14:07:35</sys_updated_on>
+            <value>master_suite</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>room_type</element>
             <name>x_423377_californi_room_availability</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-11-17 04:03:50</sys_created_on>
-            <sys_id>451aece3dbc540106b4b6781ca96195a</sys_id>
+            <sys_created_on>2019-11-19 14:07:35</sys_created_on>
+            <sys_id>7077011cdb9104106b4b6781ca9619d8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>room_type</sys_name>
             <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
@@ -109,7 +128,7 @@
             <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
             <sys_update_name>sys_choice_x_423377_californi_room_availability_room_type</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-11-17 04:03:50</sys_updated_on>
+            <sys_updated_on>2019-11-19 14:07:35</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

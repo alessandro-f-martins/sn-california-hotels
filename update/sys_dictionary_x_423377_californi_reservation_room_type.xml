@@ -12,7 +12,7 @@
         <column_label>Room Type</column_label>
         <comments/>
         <create_roles/>
-        <default_value>2</default_value>
+        <default_value>1e97c11cdb9104106b4b6781ca961988</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -49,14 +49,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-11-17 03:54:43</sys_created_on>
         <sys_id>73f7e823dbc540106b4b6781ca9619e0</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Room Type</sys_name>
         <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
         <sys_policy/>
         <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
         <sys_update_name>sys_dictionary_x_423377_californi_reservation_room_type</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-11-19 13:42:21</sys_updated_on>
+        <sys_updated_on>2019-11-19 14:11:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

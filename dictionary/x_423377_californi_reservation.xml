@@ -19,14 +19,8 @@
         <element attributes="edge_encryption_enabled=true" label="Planned Arrival Date" max_length="40" name="planned_arrival_date" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Planned Departure Date" max_length="40" name="planned_departure_date" type="glide_date_time"/>
         <element attributes="omit_sys_original=true" label="Reservation Price" max_length="20" name="reservation_price" read_only="true" type="currency"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="2" label="Room Type" max_length="40" name="room_type" reference="x_423377_californi_room_availability" type="reference">
-            <choice>
-                <element inactive_on_update="false" label="Double" value="2"/>
-                <element inactive_on_update="false" label="Double-Double" value="3"/>
-                <element inactive_on_update="false" label="Master Suite" value="5"/>
-                <element inactive_on_update="false" label="Single" value="1"/>
-                <element inactive_on_update="false" label="Suite" value="4"/>
-            </choice>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="1e97c11cdb9104106b4b6781ca961988" label="Room Type" max_length="40" name="room_type" reference="x_423377_californi_room_availability" type="reference">
+            <choice/>
         </element>
     </element>
 </database>
