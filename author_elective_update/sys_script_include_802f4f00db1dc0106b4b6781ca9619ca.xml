@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_423377_californi.CheckRoomAvailability</api_name>
+        <caller_access>2</caller_access>
+        <client_callable>false</client_callable>
+        <description>Return unavailable room types.</description>
+        <name>CheckRoomAvailability</name>
+        <script><![CDATA[var CheckRoomAvailability = Class.create();
+CheckRoomAvailability.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getUnavailableRooms: function() {
+        var grRooms = GlideRecord('x_423377_californi_room_availability');
+		grRooms.addQuery('availability', false);
+        grRooms.query();
+		var ret = '';
+		while (grRooms.next()) {
+			ret += grRooms.sys_id + ';';
+		}
+		if (ret)
+			ret = ret.substr(0, ret.length -1);
+		return ret;
+    },
+    type: 'CheckRoomAvailability'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-19 05:39:32</sys_created_on>
+        <sys_id>802f4f00db1dc0106b4b6781ca9619ca</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>CheckRoomAvailability</sys_name>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_update_name>sys_script_include_802f4f00db1dc0106b4b6781ca9619ca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-19 17:17:17</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</application>
+        <file_path/>
+        <instance_id>6fc0f0bcdbcd041007072f17d4961904</instance_id>
+        <instance_name>dev94401</instance_name>
+        <name>sys_script_include_802f4f00db1dc0106b4b6781ca9619ca</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_423377_californi.CheckRoomAvailability&lt;/api_name&gt;&lt;caller_access&gt;2&lt;/caller_access&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Return unavailable room types.&lt;/description&gt;&lt;name&gt;CheckRoomAvailability&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var CheckRoomAvailability = Class.create();
+CheckRoomAvailability.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getUnavailableRooms: function() {
+        var grRooms = GlideRecord('x_423377_californi_room_availability');
+		grRooms.addQuery('availability', false);
+        grRooms.query();
+		var ret = '';
+		while (grRooms.next()) {
+			ret += grRooms.sys_id + ';';
+		}
+		if (ret)
+			ret = ret.substr(0, ret.length -1);
+		return ret;
+    },
+    type: 'CheckRoomAvailability'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-11-19 05:39:32&lt;/sys_created_on&gt;&lt;sys_id&gt;802f4f00db1dc0106b4b6781ca9619ca&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;CheckRoomAvailability&lt;/sys_name&gt;&lt;sys_package display_value="California Hotels" source="x_423377_californi"&gt;1fc2acebdb8540106b4b6781ca9619fe&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="California Hotels"&gt;1fc2acebdb8540106b4b6781ca9619fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_802f4f00db1dc0106b4b6781ca9619ca&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-11-19 17:17:17&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1346018373</payload_hash>
+        <record_name>CheckRoomAvailability</record_name>
+        <reverted_from/>
+        <source>1fc2ecebdb8540106b4b6781ca961900</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-19 17:17:17</sys_created_on>
+        <sys_id>a7d2b514db5504106b4b6781ca9619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16e84ab1ff00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-19 17:17:17</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>23d2b514f8550410227d8d6f1a14b8f7</update_guid>
+        <update_guid_history>23d2b514f8550410227d8d6f1a14b8f7:-1346018373,1572fd90e25504103b84e51460d73b60:495969001,6d627d90825504102e6aa2aa3d5d833d:-404982568,2a52fdd01455041020cb7d257e46c309:-569090027,46117d90735504105a7b5e66fa660d43:1220658144,0dce2d10ce550410c951a7630e4312d9:1109667432,79c9a11c4a1504109bf152e0c0846eb7:64063936,8b096598541504108604ace424e8f93d:1109667432,fda2a95457150410ae43ff195402def2:304589283,f392e954be1504107a4b5edec9f77d16:-845296310,00e1a114b4150410eb3a5b1b6ff8a86d:515705601,28ce9d105b15041036bf091acdcc52de:-1747435953,e90e19109d1504101217891dc6687eef:1365712399,8679d11cead1041013db9d04f52a7ccf:707629428,4a0951989cd10410d95520e8500f0a45:838108498,8398159880d10410bb22531ecb320c57:517312150,96b75598f2d104103c981bb4505b96d3:348658789,1a32955479d10410aae1c138d380a6a3:517312150,78d4eb401b5dc01083915cf605670bd8:870757650,e6231b04571dc010f1fa58d7d9a3c5b7:-918291101</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-19 17:18:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>64f3019b287d47d0b359fd2cbc6b6100</sys_id>
+        <sys_metadata>802f4f00db1dc0106b4b6781ca9619ca</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CheckRoomAvailability</sys_name>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_scope_delete display_value="">31e4f45c9dcf42e7961da20474aaa5e9</sys_scope_delete>
+        <sys_update_name>sys_script_include_802f4f00db1dc0106b4b6781ca9619ca</sys_update_name>
+        <sys_update_version display_value="sys_script_include_802f4f00db1dc0106b4b6781ca9619ca">a7d2b514db5504106b4b6781ca9619f7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-19 17:18:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
