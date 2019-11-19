@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Guest" max_length="40" name="x_423377_californi_guest" type="collection">
+        <element label="e-Mail" max_length="100" name="email" type="string"/>
+        <element label="Last Name" max_length="100" name="last_name" type="string"/>
+        <element label="First Name" max_length="100" name="name" type="string"/>
+        <element label="Phone Number" max_length="40" name="phone_number" type="phone_number_e164"/>
+        <element label="RG" max_length="13" name="rg_id" type="string"/>
+        <element display="true" label="User_ref" max_length="32" name="user_ref" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="user_ref"/>
+        </index>
+    </element>
+</database>

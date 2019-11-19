@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_423377_californi.guest_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>guest_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-18 13:54:01</sys_created_on>
+        <sys_id>dccabf37db01c0106b4b6781ca9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_423377_californi.guest_user</sys_name>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_update_name>sys_user_role_dccabf37db01c0106b4b6781ca9619dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-18 13:54:01</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</application>
+        <file_path/>
+        <instance_id>6fc0f0bcdbcd041007072f17d4961904</instance_id>
+        <instance_name>dev94401</instance_name>
+        <name>sys_user_role_dccabf37db01c0106b4b6781ca9619dc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_423377_californi.guest_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>guest_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-11-18 13:54:01</sys_created_on><sys_id>dccabf37db01c0106b4b6781ca9619dc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_423377_californi.guest_user</sys_name><sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package><sys_policy/><sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope><sys_update_name>sys_user_role_dccabf37db01c0106b4b6781ca9619dc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-11-18 13:54:01</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-2145139107</payload_hash>
+        <record_name>x_423377_californi.guest_user</record_name>
+        <reverted_from/>
+        <source>1fc2ecebdb8540106b4b6781ca961900</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-18 13:54:01</sys_created_on>
+        <sys_id>d8cabf37db01c0106b4b6781ca9619e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16e7ecaab150000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-18 13:54:01</sys_updated_on>
+        <type>Role</type>
+        <update_guid>14cabf373c01c010d51a3cb17c7a5ee1</update_guid>
+        <update_guid_history>14cabf373c01c010d51a3cb17c7a5ee1:-2145139107</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_423377_californi.guest_user">0afe4dccdb15c0106b4b6781ca961900</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-18 20:01:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>7bd64b643582459c8fb665f04527f1c4</sys_id>
+        <sys_metadata>dccabf37db01c0106b4b6781ca9619dc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_423377_californi.guest_user</sys_name>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_scope_delete display_value="">31e4f45c9dcf42e7961da20474aaa5e9</sys_scope_delete>
+        <sys_update_name>sys_user_role_dccabf37db01c0106b4b6781ca9619dc</sys_update_name>
+        <sys_update_version display_value="sys_user_role_dccabf37db01c0106b4b6781ca9619dc">d8cabf37db01c0106b4b6781ca9619e1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-18 20:01:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

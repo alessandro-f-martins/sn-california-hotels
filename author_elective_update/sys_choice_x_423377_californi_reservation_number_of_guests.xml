@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="number_of_guests" table="x_423377_californi_reservation" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>number_of_guests</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1</label>
+            <language>en</language>
+            <name>x_423377_californi_reservation</name>
+            <sequence>0</sequence>
+            <sys_created_by>afmartins</sys_created_by>
+            <sys_created_on>2019-11-18 22:23:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>256f258cdb95c0106b4b6781ca961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>afmartins</sys_updated_by>
+            <sys_updated_on>2019-11-18 22:23:39</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>number_of_guests</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2</label>
+            <language>en</language>
+            <name>x_423377_californi_reservation</name>
+            <sequence>1</sequence>
+            <sys_created_by>afmartins</sys_created_by>
+            <sys_created_on>2019-11-18 22:23:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>656f258cdb95c0106b4b6781ca961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>afmartins</sys_updated_by>
+            <sys_updated_on>2019-11-18 22:23:39</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>number_of_guests</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3</label>
+            <language>en</language>
+            <name>x_423377_californi_reservation</name>
+            <sequence>2</sequence>
+            <sys_created_by>afmartins</sys_created_by>
+            <sys_created_on>2019-11-18 22:23:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>216f258cdb95c0106b4b6781ca961965</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>afmartins</sys_updated_by>
+            <sys_updated_on>2019-11-18 22:23:39</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>number_of_guests</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>4</label>
+            <language>en</language>
+            <name>x_423377_californi_reservation</name>
+            <sequence>3</sequence>
+            <sys_created_by>afmartins</sys_created_by>
+            <sys_created_on>2019-11-18 22:23:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e96f258cdb95c0106b4b6781ca961966</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>afmartins</sys_updated_by>
+            <sys_updated_on>2019-11-18 22:23:39</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>number_of_guests</element>
+            <name>x_423377_californi_reservation</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>afmartins</sys_created_by>
+            <sys_created_on>2019-11-18 22:23:39</sys_created_on>
+            <sys_id>6d6f258cdb95c0106b4b6781ca961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>number_of_guests</sys_name>
+            <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+            <sys_update_name>sys_choice_x_423377_californi_reservation_number_of_guests</sys_update_name>
+            <sys_updated_by>afmartins</sys_updated_by>
+            <sys_updated_on>2019-11-18 22:23:39</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

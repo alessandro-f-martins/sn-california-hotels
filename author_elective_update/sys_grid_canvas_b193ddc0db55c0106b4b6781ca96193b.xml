@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas">
+    <sys_grid_canvas action="DELETE">
+        <legacy_page display_value="PA New Tab">7993ddc0db55c0106b4b6781ca96193a</legacy_page>
+        <name>PA New Tab</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>afmartins</sys_created_by>
+        <sys_created_on>2019-11-18 20:22:09</sys_created_on>
+        <sys_id>b193ddc0db55c0106b4b6781ca96193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA New Tab</sys_name>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_update_name>sys_grid_canvas_b193ddc0db55c0106b4b6781ca96193b</sys_update_name>
+        <sys_updated_by>afmartins</sys_updated_by>
+        <sys_updated_on>2019-11-18 20:22:09</sys_updated_on>
+    </sys_grid_canvas>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</application>
+        <file_path/>
+        <instance_id>6fc0f0bcdbcd041007072f17d4961904</instance_id>
+        <instance_name>dev94401</instance_name>
+        <name>sys_grid_canvas_b193ddc0db55c0106b4b6781ca96193b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas"><sys_grid_canvas action="INSERT_OR_UPDATE"><legacy_page display_value="PA New Tab">7993ddc0db55c0106b4b6781ca96193a</legacy_page><name>PA New Tab</name><sys_class_name>sys_grid_canvas</sys_class_name><sys_created_by>afmartins</sys_created_by><sys_created_on>2019-11-18 20:22:09</sys_created_on><sys_id>b193ddc0db55c0106b4b6781ca96193b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PA New Tab</sys_name><sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package><sys_policy/><sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope><sys_update_name>sys_grid_canvas_b193ddc0db55c0106b4b6781ca96193b</sys_update_name><sys_updated_by>afmartins</sys_updated_by><sys_updated_on>2019-11-18 20:22:09</sys_updated_on></sys_grid_canvas></record_update>]]></payload>
+        <payload_hash>1649217550</payload_hash>
+        <record_name>PA New Tab</record_name>
+        <reverted_from/>
+        <source>1fc2ecebdb8540106b4b6781ca961900</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>afmartins</sys_created_by>
+        <sys_created_on>2019-11-18 20:22:09</sys_created_on>
+        <sys_id>3993ddc0db55c0106b4b6781ca96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16e802e02df0000001</sys_recorded_at>
+        <sys_updated_by>afmartins</sys_updated_by>
+        <sys_updated_on>2019-11-18 20:22:09</sys_updated_on>
+        <type>Grid Canvas</type>
+        <update_guid>7193ddc09a55c010b2eecacada363c3c</update_guid>
+        <update_guid_history>7193ddc09a55c010b2eecacada363c3c:1649217550</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>afmartins</sys_created_by>
+        <sys_created_on>2019-11-18 20:22:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_grid_canvas">sys_grid_canvas</sys_db_object>
+        <sys_id>236c3215f96f4e049044ecfa47b0cc99</sys_id>
+        <sys_metadata>b193ddc0db55c0106b4b6781ca96193b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA New Tab</sys_name>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_scope_delete display_value="">31e4f45c9dcf42e7961da20474aaa5e9</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_b193ddc0db55c0106b4b6781ca96193b</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_b193ddc0db55c0106b4b6781ca96193b">3993ddc0db55c0106b4b6781ca96193c</sys_update_version>
+        <sys_updated_by>afmartins</sys_updated_by>
+        <sys_updated_on>2019-11-18 20:22:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

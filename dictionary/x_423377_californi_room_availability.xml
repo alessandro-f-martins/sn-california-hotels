@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Room Availability" max_length="40" name="x_423377_californi_room_availability" type="collection">
+        <element label="Availability" max_length="40" name="availability" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Avail_Schedule" max_length="32" name="avail_schedule" reference="cmn_schedule" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="1" display="true" label="Room Type" max_length="40" name="room_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Double" value="2"/>
+                <element inactive_on_update="false" label="Double-Double" value="3"/>
+                <element inactive_on_update="false" label="Master Suite" value="5"/>
+                <element inactive_on_update="false" label="Single" value="1"/>
+                <element inactive_on_update="false" label="Suite" value="4"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="avail_schedule"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

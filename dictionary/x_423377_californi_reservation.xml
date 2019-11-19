@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Reservation" max_length="40" name="x_423377_californi_reservation" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Credit Card" max_length="40" name="credit_card" type="string">
+            <choice>
+                <element inactive_on_update="false" label="American Express" value="3"/>
+                <element inactive_on_update="false" label="MasterCard" value="1"/>
+                <element inactive_on_update="false" label="Visa" value="2"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Main Guest" max_length="32" name="main_guest" reference="x_423377_californi_guest" type="reference"/>
+        <element choice="1" label="Number of Guests" max_length="40" name="number_of_guests" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Planned Arrival Date" max_length="40" name="planned_arrival_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Planned Departure Date" max_length="40" name="planned_departure_date" type="glide_date_time"/>
+        <element attributes="omit_sys_original=true" label="Reservation Price" max_length="20" name="reservation_price" read_only="true" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="2" label="Room Type" max_length="40" name="room_type" reference="x_423377_californi_room_availability" type="reference">
+            <choice>
+                <element inactive_on_update="false" label="Double" value="2"/>
+                <element inactive_on_update="false" label="Double-Double" value="3"/>
+                <element inactive_on_update="false" label="Master Suite" value="5"/>
+                <element inactive_on_update="false" label="Single" value="1"/>
+                <element inactive_on_update="false" label="Suite" value="4"/>
+            </choice>
+        </element>
+    </element>
+</database>

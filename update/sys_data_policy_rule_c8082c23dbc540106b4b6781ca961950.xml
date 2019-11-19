@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>planned_arrival_date</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-17 03:54:44</sys_created_on>
+        <sys_data_policy display_value="Sets the Planned Arrival Date field to mandatory">08082c23dbc540106b4b6781ca96194e</sys_data_policy>
+        <sys_id>c8082c23dbc540106b4b6781ca961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>planned_arrival_date</sys_name>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_update_name>sys_data_policy_rule_c8082c23dbc540106b4b6781ca961950</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-17 03:54:44</sys_updated_on>
+        <table>x_423377_californi_reservation</table>
+    </sys_data_policy_rule>
+</record_update>

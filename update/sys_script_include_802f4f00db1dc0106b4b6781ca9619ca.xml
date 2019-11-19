@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_423377_californi.verifyRoomAvailability</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Return unavailable room types.</description>
+        <name>verifyRoomAvailability</name>
+        <script><![CDATA[var verifyRoomAvailability = Class.create();
+verifyRoomAvailability.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getUnavailableRooms: function() {
+        var grRooms = GlideRecord('x_423377_californi_room_availability');
+        grRooms.addQuery('availability', false);
+        grRooms.query();
+		var ret = '';
+		while (grRooms.next()) {
+			ret += grRooms.number + ';';
+		}
+		if (ret)
+			ret = ret.substr(0, ret.length -1);
+		return ret;
+    },
+    type: 'verifyRoomAvailability'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-19 05:39:32</sys_created_on>
+        <sys_id>802f4f00db1dc0106b4b6781ca9619ca</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>verifyRoomAvailability</sys_name>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_update_name>sys_script_include_802f4f00db1dc0106b4b6781ca9619ca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-19 06:56:42</sys_updated_on>
+    </sys_script_include>
+</record_update>

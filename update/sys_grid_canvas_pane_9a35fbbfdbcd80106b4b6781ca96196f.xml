@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA New Tab">8e35f7bfdbcd80106b4b6781ca961911</grid_canvas>
+        <height>4</height>
+        <portal_widget display_value="Created 2019-11-18 05:29:51">5e35fbbfdbcd80106b4b6781ca96195c</portal_widget>
+        <posx>4</posx>
+        <posy>28</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-18 13:29:51</sys_created_on>
+        <sys_id>9a35fbbfdbcd80106b4b6781ca96196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>8e35f7bfdbcd80106b4b6781ca961911</sys_name>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_9a35fbbfdbcd80106b4b6781ca96196f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-18 13:29:51</sys_updated_on>
+        <width>4</width>
+    </sys_grid_canvas_pane>
+</record_update>

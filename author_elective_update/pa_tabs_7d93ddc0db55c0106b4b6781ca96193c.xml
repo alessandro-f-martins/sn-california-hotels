@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="DELETE">
+        <canvas_page/>
+        <name>New Tab</name>
+        <page/>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>afmartins</sys_created_by>
+        <sys_created_on>2019-11-18 20:22:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7d93ddc0db55c0106b4b6781ca96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_update_name>pa_tabs_7d93ddc0db55c0106b4b6781ca96193c</sys_update_name>
+        <sys_updated_by>afmartins</sys_updated_by>
+        <sys_updated_on>2019-11-18 20:22:09</sys_updated_on>
+    </pa_tabs>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</application>
+        <file_path/>
+        <instance_id>6fc0f0bcdbcd041007072f17d4961904</instance_id>
+        <instance_name>dev94401</instance_name>
+        <name>pa_tabs_7d93ddc0db55c0106b4b6781ca96193c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs"><pa_tabs action="INSERT_OR_UPDATE"><canvas_page/><name>New Tab</name><page/><sys_class_name>pa_tabs</sys_class_name><sys_created_by>afmartins</sys_created_by><sys_created_on>2019-11-18 20:22:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7d93ddc0db55c0106b4b6781ca96193c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>New Tab</sys_name><sys_overrides/><sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package><sys_policy/><sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope><sys_update_name>pa_tabs_7d93ddc0db55c0106b4b6781ca96193c</sys_update_name><sys_updated_by>afmartins</sys_updated_by><sys_updated_on>2019-11-18 20:22:09</sys_updated_on></pa_tabs></record_update>]]></payload>
+        <payload_hash>-1065032589</payload_hash>
+        <record_name>New Tab</record_name>
+        <reverted_from/>
+        <source>1fc2ecebdb8540106b4b6781ca961900</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>afmartins</sys_created_by>
+        <sys_created_on>2019-11-18 20:22:09</sys_created_on>
+        <sys_id>71935104db55c0106b4b6781ca9619ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16e802e039c0000001</sys_recorded_at>
+        <sys_updated_by>afmartins</sys_updated_by>
+        <sys_updated_on>2019-11-18 20:22:09</sys_updated_on>
+        <type>Tab</type>
+        <update_guid>b993ddc0ed55c0108b5a50d6eaf8933d</update_guid>
+        <update_guid_history>b993ddc0ed55c0108b5a50d6eaf8933d:-18995906,b993ddc0ed55c0108b5a50d6eaf8933d:-18995906,b993ddc0ed55c0108b5a50d6eaf8933d:-18995906</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="New Tab">3d935104db55c0106b4b6781ca9619fa</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>afmartins</sys_created_by>
+        <sys_created_on>2019-11-18 20:22:09</sys_created_on>
+        <sys_db_object display_value="" name="pa_tabs">pa_tabs</sys_db_object>
+        <sys_id>a09f9057bee14be0952e4f5dca3fe1e4</sys_id>
+        <sys_metadata>7d93ddc0db55c0106b4b6781ca96193c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Tab</sys_name>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_scope_delete display_value="">31e4f45c9dcf42e7961da20474aaa5e9</sys_scope_delete>
+        <sys_update_name>pa_tabs_7d93ddc0db55c0106b4b6781ca96193c</sys_update_name>
+        <sys_update_version display_value="pa_tabs_7d93ddc0db55c0106b4b6781ca96193c">71935104db55c0106b4b6781ca9619ee</sys_update_version>
+        <sys_updated_by>afmartins</sys_updated_by>
+        <sys_updated_on>2019-11-18 20:22:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

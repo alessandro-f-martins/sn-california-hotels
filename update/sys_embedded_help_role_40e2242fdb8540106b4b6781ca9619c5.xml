@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_423377_californi.mgmt" name="x_423377_californi.mgmt">04e2ec67db8540106b4b6781ca961951</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-17 03:32:21</sys_created_on>
+        <sys_id>40e2242fdb8540106b4b6781ca9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>04e2ec67db8540106b4b6781ca961951</sys_name>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_update_name>sys_embedded_help_role_40e2242fdb8540106b4b6781ca9619c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-17 03:32:21</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
