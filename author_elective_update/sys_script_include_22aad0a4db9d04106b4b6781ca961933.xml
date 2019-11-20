@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_423377_californi.CheckRoomsPerDate</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CheckRoomsPerDate</name>
+        <script><![CDATA[var CheckRoomsPerDate = Class.create();
+CheckRoomsPerDate.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    hasRoomsAvailableForDate: function() {
+        try {
+			var grRooms = new GlideRecord('x_423377_californi_room_availability');
+            grRooms.addQuery('sys_id', this.getParameter('sysparm_rt'));
+            grRooms.query();
+            grRooms.next();
+
+            gs.info('Cheguei ao script include. grRooms.qty_of_rooms -> ' + grRooms.qty_of_rooms);
+			
+            var gPlannedArrivalDate = new GlideDateTime(this.getParameter('sysparm_pad'));
+            var gPlannedDepartureDate = new GlideDateTime(this.getParameter('sysparm_pdd'));
+
+            gs.info('gPlannedArrivalDate -> ' + gPlannedArrivalDate.getValue());
+			gs.info('gPlannedDepartureDate -> ' + gPlannedDepartureDate.getValue());
+
+            var grReservation = new GlideRecord('x_423377_californi_reservation');
+            grReservation.addQuery('room_type', this.getParameter('sysparm_rt'));
+            grReservation.query();
+
+            var noOccupiedRooms = 0;
+			var counter = 0;
+            while (grReservation.next()) {
+                var recPlannedArrivalDate = new GlideDateTime(grReservation.planned_arrival_date);
+                var recPlannedDepartureDate = new GlideDateTime(grReservation.planned_departure_date);
+				gs.info('pad do registro no.' + counter + ' -> ' + recPlannedArrivalDate);
+				gs.info('pdd do registro no.' + counter + ' -> ' + recPlannedDepartureDate);
+				counter++;
+                if (!((gPlannedArrivalDate.onOrBefore(recPlannedArrivalDate) && gPlannedDepartureDate.onOrBefore(recPlannedArrivalDate)) ||
+                        (gPlannedArrivalDate.onOrAfter(recPlannedDepartureDate) && gPlannedDepartureDate.onOrAfter(recPlannedDepartureDate))))
+                    noOccupiedRooms++;
+            }
+			gs.info('noOccupiedRooms -> ' + noOccupiedRooms);
+            return (noOccupiedRooms < grRooms.qty_of_rooms) + '';
+        } catch (e) {
+            return 'Erro: ' + e.message;
+        }
+    },
+    type: 'CheckRoomsPerDate'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-20 05:34:49</sys_created_on>
+        <sys_id>22aad0a4db9d04106b4b6781ca961933</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>CheckRoomsPerDate</sys_name>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_update_name>sys_script_include_22aad0a4db9d04106b4b6781ca961933</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-20 15:45:50</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</application>
+        <file_path/>
+        <instance_id>6fc0f0bcdbcd041007072f17d4961904</instance_id>
+        <instance_name>dev94401</instance_name>
+        <name>sys_script_include_22aad0a4db9d04106b4b6781ca961933</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_423377_californi.CheckRoomsPerDate&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;CheckRoomsPerDate&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var CheckRoomsPerDate = Class.create();
+CheckRoomsPerDate.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    hasRoomsAvailableForDate: function() {
+        try {
+			var grRooms = new GlideRecord('x_423377_californi_room_availability');
+            grRooms.addQuery('sys_id', this.getParameter('sysparm_rt'));
+            grRooms.query();
+            grRooms.next();
+
+            gs.info('Cheguei ao script include. grRooms.qty_of_rooms -&gt; ' + grRooms.qty_of_rooms);
+			
+            var gPlannedArrivalDate = new GlideDateTime(this.getParameter('sysparm_pad'));
+            var gPlannedDepartureDate = new GlideDateTime(this.getParameter('sysparm_pdd'));
+
+            gs.info('gPlannedArrivalDate -&gt; ' + gPlannedArrivalDate.getValue());
+			gs.info('gPlannedDepartureDate -&gt; ' + gPlannedDepartureDate.getValue());
+
+            var grReservation = new GlideRecord('x_423377_californi_reservation');
+            grReservation.addQuery('room_type', this.getParameter('sysparm_rt'));
+            grReservation.query();
+
+            var noOccupiedRooms = 0;
+			var counter = 0;
+            while (grReservation.next()) {
+                var recPlannedArrivalDate = new GlideDateTime(grReservation.planned_arrival_date);
+                var recPlannedDepartureDate = new GlideDateTime(grReservation.planned_departure_date);
+				gs.info('pad do registro no.' + counter + ' -&gt; ' + recPlannedArrivalDate);
+				gs.info('pdd do registro no.' + counter + ' -&gt; ' + recPlannedDepartureDate);
+				counter++;
+                if (!((gPlannedArrivalDate.onOrBefore(recPlannedArrivalDate) &amp;&amp; gPlannedDepartureDate.onOrBefore(recPlannedArrivalDate)) ||
+                        (gPlannedArrivalDate.onOrAfter(recPlannedDepartureDate) &amp;&amp; gPlannedDepartureDate.onOrAfter(recPlannedDepartureDate))))
+                    noOccupiedRooms++;
+            }
+			gs.info('noOccupiedRooms -&gt; ' + noOccupiedRooms);
+            return (noOccupiedRooms &lt; grRooms.qty_of_rooms) + '';
+        } catch (e) {
+            return 'Erro: ' + e.message;
+        }
+    },
+    type: 'CheckRoomsPerDate'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-11-20 05:34:49&lt;/sys_created_on&gt;&lt;sys_id&gt;22aad0a4db9d04106b4b6781ca961933&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;CheckRoomsPerDate&lt;/sys_name&gt;&lt;sys_package display_value="California Hotels" source="x_423377_californi"&gt;1fc2acebdb8540106b4b6781ca9619fe&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="California Hotels"&gt;1fc2acebdb8540106b4b6781ca9619fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_22aad0a4db9d04106b4b6781ca961933&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-11-20 15:45:50&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>863557495</payload_hash>
+        <record_name>CheckRoomsPerDate</record_name>
+        <reverted_from/>
+        <source>1fc2ecebdb8540106b4b6781ca961900</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-20 15:45:50</sys_created_on>
+        <sys_id>b587e6ecdb5544106b4b6781ca96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16e897dc2100000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-20 15:45:50</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>3187e6ec44554410a9f402e70dc3fd7b</update_guid>
+        <update_guid_history>3187e6ec44554410a9f402e70dc3fd7b:863557495,15e3a228d2554410c283e089534a09f4:1746165253,c8222628f6554410b984204d24d34478:-1605248786,9776682004dd0410f3a62092adb4f8e3:-194941725,1826ac6c0f9d0410812c221ba3814722:926629230,45c52420d0dd0410f45da8547fe0940a:-1096823169,1244ecacef9d0410939822ab613d7c8d:-747259458,cbd26c2c819d04105370bb16430f2e45:-963939659,a062246ce39d041075261080e814ae0b:1356058046,8fe12c2cb59d0410bf8022ebf69685f1:1858535818,32fedc68b99d041041ac2474998633bb:1910531084,110cd0a4849d0410addfb56a12a5f341:-1653657965,57ab50e4729d04100ad93e1abb04ed84:-515453292</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-20 18:22:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>4ce28ebcd3b742b4b5535a6eeb606990</sys_id>
+        <sys_metadata>22aad0a4db9d04106b4b6781ca961933</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CheckRoomsPerDate</sys_name>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_scope_delete display_value="">31e4f45c9dcf42e7961da20474aaa5e9</sys_scope_delete>
+        <sys_update_name>sys_script_include_22aad0a4db9d04106b4b6781ca961933</sys_update_name>
+        <sys_update_version display_value="sys_script_include_22aad0a4db9d04106b4b6781ca961933">b587e6ecdb5544106b4b6781ca96197b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-20 18:22:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

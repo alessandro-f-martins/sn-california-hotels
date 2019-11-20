@@ -2,7 +2,9 @@
     <element label="Room Availability" max_length="40" name="x_423377_californi_room_availability" type="collection">
         <element label="Availability" max_length="40" name="availability" type="boolean"/>
         <element attributes="encode_utf8=false" label="Avail_Schedule" max_length="32" name="avail_schedule" reference="cmn_schedule" type="reference"/>
+        <element label="Booked Rooms" max_length="40" name="booked_rooms" type="integer"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Quantity of Rooms" max_length="40" name="qty_of_rooms" type="integer"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="single" display="true" label="Room Type" max_length="40" name="room_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Single" sequence="0" value="single"/>

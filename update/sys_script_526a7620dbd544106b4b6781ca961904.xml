@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_423377_californi_reservation</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p><span style="font-size: 10pt;">Todos os quartos da classe escolhida estão reservados para as datas escolhidas. Por favor, selecione outra classe de quarto ou novas datas para sua estadia.</span></p>]]></message>
+        <name>Check Rooms Per Date</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    try {
+        var grRooms = new GlideRecord('x_423377_californi_room_availability');
+        grRooms.addQuery('sys_id', current.room_type);
+        grRooms.query();
+        grRooms.next();
+
+        var noOfRooms = grRooms.qty_of_rooms;
+
+        var gPlannedArrivalDate = new GlideDateTime(current.planned_arrival_date);
+        var gPlannedDepartureDate = new GlideDateTime(current.planned_departure_date);
+
+        var grReservation = new GlideRecord('x_423377_californi_reservation');
+        grReservation.addQuery('room_type', current.room_type);
+        grReservation.query();
+
+        var noOccupiedRooms = 0;
+        while (grReservation.next()) {
+            var recPlannedArrivalDate = new GlideDateTime(grReservation.planned_arrival_date);
+            var recPlannedDepartureDate = new GlideDateTime(grReservation.planned_departure_date);
+            if (!((gPlannedArrivalDate.onOrBefore(recPlannedArrivalDate) && gPlannedDepartureDate.onOrBefore(recPlannedArrivalDate)) ||
+                    (gPlannedArrivalDate.onOrAfter(recPlannedDepartureDate) && gPlannedDepartureDate.onOrAfter(recPlannedDepartureDate))))
+                noOccupiedRooms++;
+        }
+        if (noOccupiedRooms >= noOfRooms) {
+            gs.addInfoMessage('Todos os quartos do tipo selecionado estão reservados para as datas escolhidas. Por favor, escolha outro tipo de quarto ou novas datas para sua estadia.');
+            current.setAbortAction(true);
+        }
+        return;
+    } catch (e) {
+        gs.info("Erro no BR: " + e.message);
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-20 17:41:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>526a7620dbd544106b4b6781ca961904</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Check Rooms Per Date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="California Hotels" source="x_423377_californi">1fc2acebdb8540106b4b6781ca9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="California Hotels">1fc2acebdb8540106b4b6781ca9619fe</sys_scope>
+        <sys_update_name>sys_script_526a7620dbd544106b4b6781ca961904</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-20 18:23:09</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=526a7620dbd544106b4b6781ca961904"/>
+</record_update>
